@@ -1,0 +1,99 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 45px;
+    height: 100vh;
+    display: flex;
+	align-items: flex-start;
+	align-content: flex-start;
+	justify-content: center;
+    background: linear-gradient(to right top, 
+    #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, 
+    #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, #40E0D0,#48D1CC);
+}
+
+
+.calculator-frame {
+    display: flex;
+    flex-direction: column;
+	width: 400px;
+    height: 600px;
+	box-shadow: 0 0 10px rgba(#555, .2);
+    overflow: hidden;
+    border-radius: 3.5% ;
+}
+
+
+.buttons-group{
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+    height: 600px;
+}
+
+
+button{
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    font-size: 25px;
+    width: 100px;
+    background-color: #e0f8ffc2;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    /* box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.18) inset; */
+}
+
+button:nth-child(1){
+    background-color: #B0C4DE;
+}
+button:nth-child(2){
+    background-color: #B0C4DE;
+}
+button:nth-child(3){
+    background-color: #B0C4DE;
+}
+
+button:nth-child(4n){
+    background-color: #05a7a7;
+}
+
+button:hover{
+    background-color: #e0f8fff8;
+}
+
+.spread-element{
+    width: 200px;
+}
+
+
+.operation-container{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: rgba(49, 47, 47, 0.938);
+}
+
+.operation-result{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.previous-operand{
+    color: #D3D3D3;
+    font-size: 25px;
+}
+
+.current-operand{
+    color: white;
+    font-size: 35px;
+}
