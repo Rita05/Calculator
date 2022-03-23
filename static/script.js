@@ -43,7 +43,7 @@ class Calculator {
     }
 
     chooseOperation(operation) {
-        if (this.currentOperand === '') return // блок в скобках
+        if (this.currentOperand === '') return 
 
         if (this.previousOperand !== '') {
             this.calculate()
@@ -125,7 +125,6 @@ buttonsOperation.forEach(button => {
     button.addEventListener('click', () => {
         if (button.innerText == '+/-') {
             calculator.makeOppositeNumber()
-            //calculator.chooseOperation(button.innerText)
             calculator.updateScreen()
         } else {
             calculator.chooseOperation(button.innerText)

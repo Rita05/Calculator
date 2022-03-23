@@ -118,7 +118,6 @@ $(document).ready(function () {
     $('.btn-operation').bind('click', (event) => {
         if (event.target.innerText == '+/-') {
             calculator.makeOppositeNumber()
-            //calculator.chooseOperation(button.innerText)
             calculator.updateScreen()
         } else {
             calculator.chooseOperation(event.target.innerText)
